@@ -144,11 +144,19 @@ header{
 .description{
     padding: 10px;
 }
-
+.fa-user{
+    font-size:30px;
+}
 .footer{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
     background-color: black;
     color: white;
     text-align: center;
+}
+.aboutMeText{
+    text-align:center;
 }
 
 @media(width<711px){
