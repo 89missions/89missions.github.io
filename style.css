@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'poppins';
+    font-size: 1.1em; 
+    line-height: 1.5; 
+    color: #333;
+}
+
+.menuIcon{display: none;}
+
+.container{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+.headSection{
+    width: 100%;
+    background-color: aliceblue;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #3498db;
+    padding: 20px;
+}
+.navLinks li{
+    display: inline;
+    padding: 10px;
+    color: #fff;
+}
+.navLinks li a{
+    text-decoration: none;
+}
+
+.sideBar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    background-color: rgb(191, 191, 224);
+    width: 100%;
+    display: none;
+}
+
+.sideBar .sideBarLinks li{
+    list-style-type: none;
+}
+
+.sideBar li a{
+    text-decoration: none;
+}
+
+.mainSection{
+ display: flex;
+ flex-direction: column;
+ padding: 20px;
+}
+
+.heroSection{
+    background: url('./resouces/sl_022321_41020_31.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+    color: #fff; 
+}
+.text{
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.cta{
+    background-color: rgba(255, 0, 0, 0.938);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px white;
+    cursor: pointer;
+}
+.cta a{
+    text-decoration: none;
+    color: white;
+}
+.cta:hover{
+    transform: scale(1.1);
+}
+.story{
+    text-align: center;
+}
+.story,#h2,#h3,#p{
+    padding: 5px;
+    text-align: justify;
+}
+#h2{
+    padding: 5px;
+    text-align: center;
+}
+.reviews{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.img{
+    max-width: 250px;
+}
+
+.pricing{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.price{
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #3498db;
+    color: white;
+}
+
+.description{
+    padding: 10px;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+@media(width<711px){
+
+.menuIcon{
+        display: block;
+        font-size: 30px;
+    }
+    
+.navLinks li{
+    display: none;
+    padding: 10px;
+    color: #fff;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3498db;
+    padding: 20px;
+}
+}
